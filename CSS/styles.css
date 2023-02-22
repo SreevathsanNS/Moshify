@@ -61,7 +61,7 @@ p{
 }
 
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
     
     body{
         font-size: 1.8rem;
@@ -106,7 +106,7 @@ a{
     margin-left: 10px;   
 }
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
     .link-arrow{
         font-size: 1.5rem;
     }
@@ -140,7 +140,7 @@ a{
     padding: 0.5rem 1.5rem;
 }
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
     .badge{
         font-size: 1.5rem;
     }
@@ -174,7 +174,7 @@ a{
     margin-bottom: 1rem;
 }
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
     .list--tick .list_item{
         padding-left: 0;
     }
@@ -269,11 +269,18 @@ a{
     display: inline-block; 
 }
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
     .btn{
         font-size: 1.5rem;
     }
 }
+
+
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 
 /* .btn--outline{
     background: #fff;
@@ -322,7 +329,7 @@ a{
 
 
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
     .input{
         font-size: 1.5rem;
     }
@@ -426,7 +433,7 @@ a{
 } */
 
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
     .plan__name{
         font-size: 1.4rem;
     }
@@ -502,7 +509,7 @@ a{
 }
 
 
-@media screen and(min-width: 1024px){
+@media screen and (min-width: 1024px){
     .quote{
         font-size: 2rem;
     }
@@ -568,5 +575,48 @@ a{
 
     .testimonial .quote{
         margin-left: 5rem;
+    }
+}
+
+
+/* Callouts */
+
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading{
+    color: #fff;
+    margin-top: 0;
+    font-size :3rem;
+}
+
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+}
+
+.callout__content{
+    text-align: center;
+}
+
+@media screen and (min-width){
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content{
+        text-align: left;
+    }
+
+    .callout .btn{
+        justify-self: start;
+        margin: 0 2rem;
     }
 }
