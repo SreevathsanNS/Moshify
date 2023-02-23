@@ -281,7 +281,7 @@ a{
 }
 
 
-/* .btn--outline{
+.btn--outline{
     background: #fff;
     color: var(--color-headings);
     border: 2px solid var(--color-headings);
@@ -290,7 +290,7 @@ a{
 .btn--outline:hover{
     background: var(--color-headings);
     color: #fff;
-} */
+}
 
 
 /* Inputs */
@@ -360,6 +360,9 @@ a{
     color: white;
 }
 
+.card--primary .badge--primary{
+    background: #126de4;
+}
 
 .card--secondary .badge--secondary{
     background: #02cdf1;
@@ -367,6 +370,10 @@ a{
 
 
 /* Plans */
+
+.plan{
+    transition: transform .2s ease-out;
+}
 
 .plan__name{
     color: #fff;
@@ -401,6 +408,9 @@ a{
     margin-bottom: 2rem;
 }
 
+.plan--bookmark{
+    transform: scale(1.1);
+}
 
 .plan--bookmark .card__header{
     position: relative;
@@ -431,6 +441,13 @@ a{
 
 } */
 
+.plan:hover{
+    transform: scale(1.05);
+}
+
+.plan--bookmark:hover{
+    transform: scale(1.15);
+}
 
 @media screen and (min-width: 1024px){
     .plan__name{
@@ -537,11 +554,11 @@ a{
 
 /* For 3 columns */
 
-/* @media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px){
     .grid--1x3{
         grid-template-columns: repeat(3, 1fr);
     }
-} */
+} 
 
 
 /* Testimonials */
@@ -792,4 +809,15 @@ a{
         text-align: left;
         align-self: center;
     }
+}
+
+/* Plans Block */
+
+.block-plans .grid{
+    gap: 8rem 4rem;
+}
+
+.block-plans .card{
+    max-width: 500px;
+    margin: 0 auto;
 }
