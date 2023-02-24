@@ -331,6 +331,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 
@@ -579,6 +580,7 @@ a{
 .testimonial{
     padding: 3rem;
     overflow: visible;
+    position: relative;
 }
 
 
@@ -614,6 +616,8 @@ a{
 .callout{
     padding: 4rem;
     border-radius: 5px;
+    position: relative;
+   
 }
 
 .callout--primary{
@@ -774,7 +778,7 @@ a{
     border-radius: 5px;
 }
 
-.nav_-brand{
+.nav__brand{
     transform: translateY(5px);
 }
 
@@ -913,6 +917,7 @@ a{
 
 .footer{
     background: #232323;
+    position: relative;
 }
 
 .footer a{
