@@ -621,8 +621,8 @@ a{
 .callout--primary{
     background: var(--color-primary);
     color: #fff;
-    position: absolute;
-    bottom: -10rem;
+    /* position: absolute;
+    bottom: -10rem; */
 }
 
 .callout__heading{
@@ -645,7 +645,15 @@ a{
         grid-template-columns: 1fr auto;
     }
 
-
+    .callout{
+        position: absolute;
+        /* width: 95vw; */
+        bottom: -10rem;
+        margin: auto;
+        font-size: 2rem;
+        padding-left: 5rem;
+    
+    }
 
     .callout__content{
         text-align: left;
@@ -700,6 +708,7 @@ a{
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
     bottom: 10rem;
+    /* padding-top: 5px; */
     
 }
 .block__header{
